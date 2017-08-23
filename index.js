@@ -2,7 +2,15 @@ var express = require('express');
 const phantom = require('phantom');
 var app = express();
 
-app.set('port', (process.env.PORT || 8001));
+app.set('port', (process.env.PORT || 5000));
+
+app.get('/getPageSource', async function (req, res) {
+	res.send(await getPageSource(req.query.url));
+});
+
+app.get('/test', function (req, res) {
+	res.send('test');
+});
 
 app.get('/getPageSource', async function (req, res) {
 	res.send(await getPageSource(req.query.url));
