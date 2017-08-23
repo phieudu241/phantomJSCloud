@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "description": "Test PhantomJS",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+    "start": "node index.js"
   },
-  "author": "Dung Le",
-  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phieudu241/phantomJSCloud.git"
+  },
+  "keywords": [
+    "phantomJSCloud"
+  ],
+  "author": "dungle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phieudu241/phantomJSCloud/issues"
+  },
+  "homepage": "https://github.com/phieudu241/phantomJSCloud#readme",
   "dependencies": {
     "phantom": "^4.0.5",
     "express": "latest"
   }
 }
+

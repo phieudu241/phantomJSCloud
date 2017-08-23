@@ -12,10 +12,6 @@ app.get('/test', function (req, res) {
 	res.send('test');
 });
 
-app.get('/getPageSource', async function (req, res) {
-	res.send(await getPageSource(req.query.url));
-});
-
 app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
 });
